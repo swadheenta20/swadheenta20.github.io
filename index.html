@@ -521,28 +521,29 @@
       mySidebar.style.display = "none";
     }
   </script>
-<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script></span>
-document.addEventListener('DOMContentLoaded', function () {
-    let devfolioOptions = {
-        buttonSelector: '#devf
-olio-apply-now',
-        key: 'myhackathonkey',
-    }
+  <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script></span>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+      let devfolioOptions = {
+          buttonSelector: '#devfolio-apply-now',
+          key: 'myhackathonkey',
+      }
 
-    let script = document.createElement('script');
-    script.src = "https://apply.devfolio.co";
-    document.head.append(script);
+      let script = document.createElement('script');
+      script.src = "https://apply.devfolio.co";
+      document.head.append(script);
 
-    script.onload = function () {
-        new Devfolio(devfolioOptions);
-    }
+      script.onload = function () {
+          new Devfolio(devfolioOptions);
+      }
 
-    script.onerror = function () {
-        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-        });
-    }
-});
+      script.onerror = function () {
+          document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+              window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+          });
+      }
+  });
+  </script>
   </body>
 
 </html>
