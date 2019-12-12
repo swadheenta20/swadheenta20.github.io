@@ -1,566 +1,862 @@
 <!DOCTYPE html>
+
 <html>
+
 <title>Swadheenta '20</title>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <link rel="stylesheet" href="apply-snippet.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Raleway", sans-serif
-  }
 
   body,
-  html {
-    height: 100%;
-    line-height: 1.8;
+
+  h1,
+
+  h2,
+
+  h3,
+
+  h4,
+
+  h5,
+
+  h6 {
+
+    font-family: "Raleway", sans-serif
+
   }
+
+
+
+  body,
+
+  html {
+
+    height: 100%;
+
+    line-height: 1.8;
+
+  }
+
+
 
   /* Full height image header */
+
   .bgimg-1 {
+
     background-position: center;
+
     background-size: cover;
+
     background-image: url("./images/img.png");
+
     min-height: 100%;
+
   }
+
+
 
   .w3-bar .w3-button {
+
     padding: 16px;
+
   }
+
+
 
   .sponsor-pic img {
+
     max-height: 80px;
+
     max-width: 100%;
+
     margin: 10px;
+
   }
 
+
+
   .team-member {
+
     min-width: 200px;
+
     max-width: 250px;
+
     margin: 10px;
+
   }
+
 </style>
+
+
 
 <body>
 
+
+
   <!-- Navbar (sit on top) -->
+
   <div class="w3-top">
+
     <div class="w3-bar w3-white w3-card" id="myNavbar">
-      <a href="#home" class="w3-bar-item w3-button w3-wide">Swadheenta '20</a>
+
+      <a href="#home" class="w3-bar-item w3-button w3-wide">Indradhanush '20</a>
+
       <!-- Right-sided navbar links -->
+
       <div class="w3-right w3-hide-small">
-        <a href="hackinfinity.html" class="w3-bar-item w3-button">Hack Infinity 2.0</a>
+
+       
         <a href="#aboutind" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Indradhanush</a>
+
         <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Schedule</a>
+
         <a href="#reg" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Registration</a>
+
         <a href="#sponsor" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Sponsors</a>
+
         <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Team</a>
+
         <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>Reach out</a>
 
+
+
       </div>
+
       <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
+
+
       <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+
         onclick="w3_open()">
+
         <i class="fa fa-bars"></i>
+
       </a>
+
     </div>
+
   </div>
 
+
+
   <!-- Sidebar on small screens when clicking the menu icon -->
+
   <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+
     style="display:none" id="mySidebar">
+
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#abouthack" onclick="w3_close()" class="w3-bar-item w3-button">Hack Infinity 2.0</a>
+
     <a href="#aboutind" onclick="w3_close()" class="w3-bar-item w3-button">Indradhanush</a>
+
     <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
+
     <a href="#reg" onclick="w3_close()" class="w3-bar-item w3-button">Registration</a>
+
     <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button">Sponsors</a>
+
     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Reach out</a>
+
+
 
   </nav>
 
+
+
   <!-- Header with full-height image -->
+
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+
     <div class="w3-display-center w3-text-white" style="padding:48px; padding-top: 60px; text-align: center;">
-      <div style="margin-top: 20px;"><img src="/images/DCEI Logo.jpg" style="height: 80px;"><span
-          style="margin: 0 20px; font-weight: bold;"> and </span><img src="/images/da.png" style="height: 80px;"></div>
+
+      <div style="margin-top: 20px;"><img src="./images/DCEI_Logo.jpg" style="height: 80px;"><span
+
+          style="margin: 0 20px; font-weight: bold;"> and </span><img src="./images/da.png" style="height: 80px;"></div>
+
       <h3 style="text-align: center;">Presents</h3>
-      <span class="w3-jumbo w3-hide-small">Swadheenta '20</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Swadheenta '20</span><br>
+
+      <span class="w3-jumbo w3-hide-small">Indradhanush'20</span><br>
+
+      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Indradhanush '20</span><br>
+
       <span class="w3-large">Inspiring Infinite Ideas</span> <br>
-      <span class="w3-xlarge" style="font-weight: bold;">Co-Presented By</span>
+	  
+	  <span class="w3-xlarge" style="font-weight: bold;">Swadheenta '20</span>
+
       <div style="margin-top: 20px;"><img src="/images/devfolio.png" style="height: 30px;"></div><br><br>
-      <span class="w3-large"><u>Hackathon</u></span> <br>
+
       <span class="w3-large"><u>Entrepreneurship Workshop</u></span> <br>
+
        
-      <span class="w3-large">7th-9th Feb '20 </span><br>
+
+      <span class="w3-large">9th Feb '20 </span><br>
+
       <span class="w3-large">@DA-IICT, Gandhinagar, Gujarat</span><br>
+
       <div class="w3-xlarge w3-section">
+
      <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
       <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 
+
+
       <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+
       <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
     </div>
+
       
+
     </div>
+
     <!--<div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
+
     <i class="fa fa-instagram w3-hover-opacity"></i>
+
     <i class="fa fa-snapchat w3-hover-opacity"></i>
+
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+
     <i class="fa fa-twitter w3-hover-opacity"></i>
+
     <i class="fa fa-linkedin w3-hover-opacity"></i>
+
   </div> -->
+
   </header>
 
-  <!-- About Hack Infinity 2.0 Section -->
-  <div class="w3-container" style="padding:128px 16px" id="abouthack">
-    <h3 class="w3-center">Hack Infinity 2.0</h3>
-    <p class="w3-center w3-large">Themes</p>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
-      <div class="w3-quarter">
-        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-        <p class="w3-large">Data driven solutions</p>
-        <p>Data has taken the world by storm. Build solutions out of it.</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-        <p class="w3-large">FinTech</p>
-        <p>Code your best, and bring out innovations in the field of finance.</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-        <p class="w3-large">Blockchain</p>
-        <p>Blockchain aims to be as widespread as water, soon. Can it be better?</p>
-      </div>
-      <div class="w3-quarter">
-        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-        <p class="w3-large">Climate Change</p>
-        <p>Want another version of Hack Infinity? Build something that saves the planet!!</p>
-      </div>
-    </div>
-             
-  </div>
-<!--   <div class="w3-center" style="margin: auto width: 50%"> <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button> -->
-</div>
 
   <!--About Indradhanush-->
+
   <div class="w3-container" style="padding:128px 16px" id="aboutind">
-    <h3 class="w3-center">Indradhanush</h3>
+
+    <h3 class="w3-center">Modus Operandi</h3>
+
     <p class="w3-center w3-large">Building an entrepreneur</p>
+
     <div class="w3-row-padding w3-center" style="margin-top:64px">
+
       <div class="w3-quarter">
+
         <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
         <p class="w3-large">Women who conquer- Speaker session</p>
+
         <p>She came, she saw, she won. We listen.</p>
+
       </div>
+
       <div class="w3-quarter">
+
         <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
         <p class="w3-large">Business model formation workshop</p>
+
         <p>There are problems? No, they're called business.</p>
+
       </div>
+
       <div class="w3-quarter">
+
         <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
         <p class="w3-large">Digital Marketing session</p>
+
         <p>Scrolling past Insta? Grow your business doing that.</p>
+
       </div>
+
       <div class="w3-quarter">
+
         <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
         <p class="w3-large">Pitch it!!</p>
+
         <p>Give us an idea, and a model, and we'll help you make a company.</p>
+
       </div>
+
     </div>
+
   </div>
 
+
+
   <!-- Schedule -->
+
   <div class="w3-container" style="padding:128px 16px; text-align: center;" id="schedule">
+
     <h3 class="w3-center">Schedule</h3>
+
     <div class="w3-row-padding" style="margin:0 -16px">
+
       <div class="w3-half w3-margin-bottom">
+
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+
           <li class="w3-dark-grey w3-xlarge w3-padding-32">7th and 8th Feb</li>
+<!-- 
           <li class="w3-padding-16">5:30 PM - Inauguration of Swadheenta</li>
+
           <li class="w3-padding-16">6:00 PM - Hack Infinity 2.0 unleashed and Speaker session #1</li>
+
           <li class="w3-padding-16">8:00 AM - Evaluation#1</li>
+
           <li class="w3-padding-16">4:00 PM - Speaker Session#2</li>
+
           <li class="w3-padding-16">8:00 PM - Evaluation#2</li>
-          <li class="w3-padding-16">8:00 AM - Conclusion of hackathon</li>
+
+          <li class="w3-padding-16">8:00 AM - Conclusion of hackathon</li> -->
+
 <!--           <li class="w3-padding-16">
 
-            <span class="w3-opacity"><a href="https://github.com/dkp1903">GitHub</a></span>
+   <span class="w3-opacity"><a href="https://github.com/dkp1903">GitHub</a></span>
+
           </li> -->
 
-        </ul>
+
+
+        <!-- </ul>
+
       </div>
 
-      <div class="w3-half">
+ -->
+
+      <div class="w3-center">
+
         <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+
           <li class="w3-dark-grey w3-xlarge w3-padding-32">9th Feb</li>
+
           <li class="w3-padding-16">9:00 AM - Indradhanush begins</li>
+
           <li class="w3-padding-16">9:30 AM - Business Model formation</li>
 
+
+
           <li class="w3-padding-16">11:00 AM - Investor pitching</li>
+
           <li class="w3-padding-16">Noon - Why networking works</li>
+
            <li class="w3-padding-16">1 PM - Lunch</li>
+
           <li class="w3-padding-16">2 PM - Theme presentation and team formation          </li>
+
            <li class="w3-padding-16">4 PM - Pitch session</li>
-<!--           <li class="w3-padding-16">4 PM - Panel discussion</li> -->
+
+           <li class="w3-padding-16">5 PM - Panel discussion</li> 
+
           <li class="w3-padding-16">6 PM - Conclusion of Swadheenta</li>
 
+
+
         </ul>
+
       </div>
+
+
+
 
 
     </div>
 
+
+
     <div class="w3-container" style="padding:128px 16px; text-align: center;" id="reg">
+
       <h3 class="w3-center">Register here</h3>
 
+
+
       <div class="w3-row-padding w3-center" style="margin-top:64px">
-        <div class="w3-half">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Hack Infinity 2.0</p>
-          <p><a href="https://forms.gle/fvmBsBcNWVGH4i1a6">Register</a></p>
+
+        
 <!--           <button id="devfolio-apply-now"><svg class="logo" xmlns="http://www.w3.org/2000/svg" fill="#fff"viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px"><path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" /><path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z"/></svg>Apply with Devfolio</button>
+
  -->
-        </div>
-        <div class="w3-half">
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-          <p class="w3-large">Indradhanush</p>
-          <p><a href="https://forms.gle/fvmBsBcNWVGH4i1a6">Register</a></p>
+
         </div>
 
+        <div class="w3-center">
+
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+
+          <p class="w3-large">Indradhanush</p>
+
+          <p><a href="https://forms.gle/fvmBsBcNWVGH4i1a6">Register</a></p>
+
+        </div>
+
+
+
       </div>
+
     </div>
+
+
 
     <!-- Prizes -->
+
     <div class="w3-container" style="padding:128px 16px; text-align: center;" id="reg">
-      <h3 class="w3-center">Prizes</h3>
+
+      <h3 class="w3-center">Prizes for pitch session</h3>
+
+
 
       <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
         <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Best submission #1</span><br>
-          Rs 40,000/- + Benefits
+
+          <span class="w3-xlarge">Best pitch</span><br>
+
+          Rs 4,000/- 
+
         </div>
+
         <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Runners up</span><br>
-          Rs 30,000/- + Benefits
+
+          <span class="w3-xlarge">Most socially directed idea</span><br>
+
+          Rs 3,000/-
+
         </div>
+
         <div class="w3-quarter w3-section">
-          <span class="w3-xlarge">Too close, yet 2 far</span><br>
-          Rs 20,000/- + Benefits
+
+          <span class="w3-xlarge">Most robust model</span><br>
+
+          Rs 2,000/- + Benefits
+
         </div>
-        <div class="w3-quarter w3-section">
+
+        <!-- <div class="w3-quarter w3-section">
+
           <span class="w3-xlarge">Best team with all women participants</span><br>
+
           Rs 10,000/- + Benefits
-        </div>
+
+        </div> -->
+
       </div>
+
     </div>
 
+
+
     <!--Sponsor -->
-    <div class="w3-container w3-light-grey" style="padding:128px 16px" id="sponsor">
+
+   <!--  <div class="w3-container w3-light-grey" style="padding:128px 16px" id="sponsor">
+ -->
       <!--     <div class="w3-row-padding">
+
       <div class="w3-col m6"> -->
-      <h3>Why sponsor us</h3>
+
+     <!--  <h3>Why sponsor us/h3> -->
+
       <!--    
+
     <ul>
+
           <li> Chance to network with the best developers, marketeers, coders, VCs of India</li>
+
           <li> Chance to interview and hire the best.</li>
+
           <li> Chance to host sessions for the best. We offer workshops and speaker sessions. </li>
+
           <li>Chance to test your products against a wide audience</li>
+
         </ul>
+
         Interested? <a href="https://forms.gle/8SxejoTk34dmgk8BA">Let us know</a>
+
+
 
         -->
 
-      <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Snippets from Hack Infinity</a></p> -->
+
+
+      <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Snippets from Hack Infinity</a></p> -->
+
       <!--  </div>
-      <!--     <div class="w3-col m6"-->
+
+           <div class="w3-col m6"-->
+
       <!--
+
       <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+
     </div> -->
+
       <!-- </div> -->
 
-      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+
+      <!-- <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
         <div class="w3-quarter w3-section">
+
           <span class="w3-xlarge">Interviews</span><br>
+
           Chance to interview, and hire some of the best developers in the country.
+
         </div>
+
         <div class="w3-quarter w3-section">
+
           <span class="w3-xlarge">Workshops</span><br>
+
           Host sessions and workshops before, during and after the event, for the hackathon participants as well as
+
           DAIICT students.
+
         </div>
+
         <div class="w3-quarter w3-section">
+
           <span class="w3-xlarge">Products</span><br>
+
           A chance to test your products among the most tech-versatile student developers you could find.
+
         </div>
+
         <div class="w3-quarter w3-section">
+
           <span class="w3-xlarge">Guarenteed sign ups and downloads</span><br>
+
           We guarentee pre-worked out numbers for mailing list subscriptions, account sign ups and app downloads.
+
         </div>
+
       </div>
-      
+
+       -->
+
 <!--       <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> <a href="https://drive.google.com/open?id=1DFsrttS-TXt8qtSTBbbkIuX1ZLsTc1LB" target="_blank">Download brochure</a></button></p> -->
+<!-- 
       <a href="https://drive.google.com/open?id=1DFsrttS-TXt8qtSTBbbkIuX1ZLsTc1LB" target="_blank" class="w3-button w3-dark-grey">Brochure</a><br>
+
       Interested? <a href="https://forms.gle/8SxejoTk34dmgk8BA">Let us know</a>
+
     </div>
+
+ -->
 
     
+
   <!-- Sponsors -->  
+<!-- 
   <div class="w3-container w3-center" style="padding:128px 16px" id="sponsors">
+
     <h1 class="w3-center">Sponsors</h1>
+
     <div class="sponsor-pic">
+
       <img src="/images/da.png" style="height: 100px; max-height: 100px;">
+
       <img src="/images/devfolio2.png" style="height: 400px; max-height: 200px;">
+
     </div>
+
     <div class="sponsor-pics w3-row">
+
       <div class="sponsor-pic">
+
         
+
         <img src="/images/matic.jpeg" style="height: 400px; max-height: 200px;">
+
       </div>
+
     </div>
+
     <div class="sponsor-pics w3-row" style="margin-bottom: 100px;">
+
       <div class="sponsor-pic w3-col">
+
         <a href="https://scholifyme.com" target="_blank">
+
         <img src="/images/Scholify.png"></a>
+
         <a href="https://crio.do" target="_blank">
+
         <img src="/images/Crio.png"></a>
+
         
+
       </div>
+
         
+
     </div>
+
     <h1 class="w3-center">Past Sponsors</h1>
+
     <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+
       <div class="sponsor-pic">
+
         <img src="/images/mozilla.jpg">
+
       </div>
+
       <div class="sponsor-pic">
+
         <img src="/images/google.png">
+
       </div>
+
       <div class="sponsor-pic">
+
         <img src="/images/mlh.png">
+
       </div>
+
       <div class="sponsor-pic">
+
         <img src="/images/ciie.png">
-      </div>
-    </div>
-  </div>
-
-    <!-- Team Section -->
-    <div class="w3-container" style="padding:128px 16px" id="team">
-      <h3 class="w3-center">THE TEAM</h3>
-      <p class="w3-center w3-large">The independents</p>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/team1.png" alt="dkp" style="width:100%">
-            <div class="w3-container">
-              <h3>Dushyant</h3>
-              <p class="w3-opacity">Team Lead</p>
-              <p>Getting the signs and making the speeches</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/team2.jpg" alt="Shivangi" style="width:100%">
-            <div class="w3-container">
-              <h3>Shivangi</h3>
-              <p class="w3-opacity">Lead, Digital Marketing and Women Emancipation</p>
-              <p>Insta-fan and uses her phone a lot</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/team5.jpeg" alt="Nikunj" style=" width:100%">
-            <div class="w3-container">
-              <h3>Nikunj</h3>
-              <p class="w3-opacity">Lead, Finance</p>
-              <p>Money man</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/team3.jpg" alt="Mike" style="width:100%">
-            <div class="w3-container">
-              <h3>Jishu</h3>
-              <p class="w3-opacity">Lead, Outreach</p>
-              <p>Fast talker, this one</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/team4.jpg" alt="Dan" style="width:100%">
-            <div class="w3-container">
-              <h3>Yash</h3>
-              <p class="w3-opacity">Lead, Design and Logistics</p>
-              <p>He thinks he can draw</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
 
       </div>
+
     </div>
+
   </div>
+
+
+ -->
+    
+
+
 
   <!-- Promo Section "Statistics" -->
+
   <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+
     <div class="w3-quarter">
-      <span class="w3-xxlarge">Rs 1,75,000+</span>
+
+      <span class="w3-xxlarge">Rs 10,000+</span>
+
       <br>Total prizes
+
     </div>
+
     <div class="w3-quarter">
-      <span class="w3-xxlarge">5000+</span>
-      <br>GitHub commits
+
+      <span class="w3-xxlarge">10+</span>
+
+      <br>Entrepreneur experts
+
     </div>
+
     <div class="w3-quarter">
-      <span class="w3-xxlarge">3</span>
-      <br>Days of unhindered competition
+
+      <span class="w3-xxlarge">9</span>
+
+      <br>Hours of brainstorming with the best
+
     </div>
+
     <div class="w3-quarter">
-      <span class="w3-xxlarge">180</span>
-      <br>Best brains of the country
+
+      <span class="w3-xxlarge">100</span>
+
+      <br>Startup enthusiasts, to network with
+
     </div>
+
   </div>
+
+
+
+
 
 
 
   <div class="w3-container w3-light-grey" style="padding:128px 16px;" id="sponsor">
-    <div class="w3-row-padding" style="width: 100%;">
-        <h1 class="w3-center">FAQs</h1>
-        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-          <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Who can apply</span><br>
-            Students presently enrolled at a recognised university, aged 16-28 years.
-          </div>
-          <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Any hardware involvement?</span><br>
-            As of this date, none. We work on pure code.
-          </div>
-          <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Travel Reimbursements</span><br>
-            Yes!!! Provided you submit all details, you will be reimbursed. Of course, there's a cap.
-          </div>
-          <div class="w3-quarter w3-section">
-            <span class="w3-xlarge">Do I have to pay anything?</span><br>
-            Na na na.... You just have to come and code. We take care of your food, travel, drinks, bathrooms(if you are
-            into bathing at all).
-          </div>
-        </div>
-      <div class="w3-center">
-        <p>
-        Something we missed? Let us know on hackinfinity2.0@gmail.com</p></div>
-        <!-----------------------------------------------------------------------      
-        <section id="faq"><div class="container"><div class="row"><div class="col-lg-10 mx-auto text-center"><img class="img-fluid" src="img/title-faq.png" alt="FAQ."><p class="mt-3">At InOut, we strive to bring together developers to participate in the hackathon irrespective of gender, race, sexual orientation, socioeconomic background or ethnicity. We usually try to keep things simple. Read our FAQs to phase out ambiguity.</p></div></div><div class="row mt-5" id="accordion"><div class="col-lg-6 col-12"><div class="card my-3"><div class="card-header btn collapsed" id="faqOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Who can participate?</div><div id="collapseOne" class="collapse" aria-labelledby="faqOne" data-parent="#accordion" style=""><div class="card-body pt-2">Everyone is welcome to apply, be it students, professionals or turing-test certified androids. If you are under 18 years of age, we’ll need a parental consent form.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How does the application process work?</div><div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#accordion" style=""><div class="card-body pt-2">We’re looking for people who "do"! Folks who are passionate enough to work on crazy world-changing ideas. Tell us what makes you apply to InOut, what excites you, accomplishments you are proud of and whatever else you think can strengthen your chances of acceptance. We’ll get to know more about your abilities from the past projects, GitHub profile, participation/awards in other hackathons.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqThree" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Can we apply as a team?</div><div id="collapseThree" class="collapse" aria-labelledby="faqThree" data-parent="#accordion"><div class="card-body pt-2">Yes! This hackathon is strictly a team competition. We believe that you’re stronger as a team than you are apart. You can join or create a team once you've started an individual application.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqFour" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">What if I don’t have a team or an idea?</div><div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-parent="#accordion"><div class="card-body pt-2">Not to worry, most people don’t! We’ll have team formation and ideation events geared towards helping you find people to work with. You can join our <a href="https://t.me/hackinout" target="_blank" rel="noreferrer">Telegram Group</a> to find potential teammates.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">What shouldn’t I bring?</div><div id="collapseFive" class="collapse" aria-labelledby="faqFive" data-parent="#accordion"><div class="card-body pt-2">Weapons of any kind, drugs, or alcohol. If you’re not sure whether something will be okay, please ask ahead of time!</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">What about hardware?</div><div id="collapseSix" class="collapse" aria-labelledby="faqSix" data-parent="#accordion"><div class="card-body pt-2">If you have specific hardware in mind, bring it with you. We will be doing our best to lend hardware at the event and enable you to work on your dream hack. We’ll put out a list closer to the event so you can see what’s available.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">I don’t want to hack, can I still get involved?</div><div id="collapseSeven" class="collapse" aria-labelledby="faqSeven" data-parent="#accordion"><div class="card-body pt-2">If you're looking to be a volunteer or mentor (i.e. someone with technical skills who'd be willing to help out participants during the weekend), you should reach out to us at <a href="mailto:volunteer@hackinout.co">volunteer@hackinout.co</a>. If your company is interested in becoming a sponsor, check out the sponsorship section above.</div></div></div></div><div class="col-lg-6 col-12"><div class="card my-3"><div class="card-header btn collapsed" id="faqEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">When will applications close?</div><div id="collapseEight" class="collapse" aria-labelledby="faqEight" data-parent="#accordion"><div class="card-body pt-2">The application portal will be closed on October 5th at 11:59pm IST. We evaluate applications on a rolling basis and acceptances will be sent every weekend via email. The sooner you apply, the better chances you have of acceptance. Once accepted, you’ll have three days to confirm your attendance.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">How much does it cost?</div><div id="collapseNine" class="collapse" aria-labelledby="faqNine" data-parent="#accordion" style=""><div class="card-body pt-2">Zero. Zip. Zilch. Nada. Nothing. Admission to InOut is completely free, thanks to our sponsors! We'll provide you with a weekend's worth of schwag, meals, drinks, snacks and a place to crash when you need a break from coding.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqTen" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">How big can a team be?</div><div id="collapseTen" class="collapse" aria-labelledby="faqTen" data-parent="#accordion"><div class="card-body pt-2">You can form teams of up to 3 people. Most teams aim to have a mix of people with both design and developer skills.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqEleven" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">Once I am accepted, what do I need to bring?</div><div id="collapseEleven" class="collapse" aria-labelledby="faqEleven" data-parent="#accordion"><div class="card-body pt-2">A valid government issued photo ID, laptop, phone, chargers, any sleeping equipment you might want (we'll be providing mattresses) and a geeky t-shirt!</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqTwelve" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">Do you provide travel reimbursements?</div><div id="collapseTwelve" class="collapse" aria-labelledby="faqTwelve" data-parent="#accordion"><div class="card-body pt-2">Yes! Once accepted, you will have to submit your travel reimbursement forms and receipts on the dashboard. For each location hackers travel from, we’ll determine a reasonable cap. We will reimburse travel costs up to this cap only.</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqThirteen" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">What do I get by attending InOut?</div><div id="collapseThirteen" class="collapse" aria-labelledby="faqThirteen" data-parent="#accordion"><div class="card-body pt-2">Pretty much everything from socializing with fellow hacker community to internship/job offers from the coolest tech companies. And yeah we’ll have prizes for finalist teams, as well as the best hardware hack, and many other company sponsored prizes. We had well over ₹10,00,000 worth of prizes up for grab last time! Most of all, you will gain an unparalleled learning experience and memories for a lifetime!</div></div></div><div class="card my-3"><div class="card-header btn collapsed" id="faqFourteen" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">How does judging work?</div><div id="collapseFourteen" class="collapse" aria-labelledby="faqFourteen" data-parent="#accordion"><div class="card-body pt-2">A panel of some of the biggest names in tech will evaluate hacks based on creativity, technical difficulty, design, and usefulness. The top 5 overall projects will demo what they have built in front of all of InOut during our closing ceremonies. New judges will be announced on a rolling basis on Twitter and Facebook, so make sure to follow us!</div></div></div></div></div><div class="mx-auto text-center"><p class="mt-5">Did we miss something?</p><div class="contact-links"><a href="https://twitter.com/hackinoutco" target="_blank"><img src="img/icon-tweet.svg" alt="Twitter"> Tweet us your questions </a><a href="mailto:mail@hackinout.co" target="_blank"><img src="img/icon-mail.svg" alt="Email"> mail@hackinout.co</a></div></div></div></section>
 
-        -------------------------------->
-        <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Snippets from Hack Infinity</a></p> -->
- 
-      <!--     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
-    </div> -->
+    <div class="w3-row-padding" style="width: 100%;">
+
+        <h1 class="w3-center">FAQs</h1>
+
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Who can apply</span><br>
+
+            Students presently enrolled at a recognised university, aged 16-28 years.
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Registration fees?</span><br>
+
+            Nada!! Learn and make, and that's our reward.
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Travel Reimbursements</span><br>
+
+            Yes!!! Provided you submit all details, you will be reimbursed. Of course, there's a cap. Also 
+
+          </div>
+
+          <div class="w3-quarter w3-section">
+
+            <span class="w3-xlarge">Will I have a chance to participate?</span><br>
+
+            Yepsss! During the pitch session, anyone with an idea can come forward and present it in front of a panel of experts, get mentoring and support.
+
+          </div>
+
+        </div>
+
+      <div class="w3-center">
+
+        <p>
+
+        Something we missed? Let us know on hackinfinity2.0@gmail.com</p></div>
+
+        
+
     </div>
+
   </div>
+
+
 
   <!-- Contact Section -->
+
   <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+
     <h3 class="w3-center">CONTACT</h3>
 
+
+
     <div style="margin-top:48px">
+
       <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> DA-IICT, Gandhinagar, Gujarat</p>
+
       <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> +91-9426893264</p>
+
       <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> hackinfinity2.0@gmail.com</p>
+
 <!--       <p><a href="https://www.linkedin.com/company/dcei">LinkedIn</a></p><br>
+
  -->
+
       <br>
 
+
+
     </div>
+
   </div>
 
+
+
   <!-- Footer -->
+
   <footer class="w3-center w3-black w3-padding-64">
+
     <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Home</a>
+
     <div class="w3-xlarge w3-section">
+
      <a href="https://www.facebook.com/daiict.dcei" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+
       <a href = "https://instagram.com/dcei.daiict"target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
 
+
+
       <a href="https://twitter.com/swadheentaDCEI" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+
       <a href="https://www.linkedin.com/company/dcei" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+
     </div>
+
   </footer>
 
+
+
   <script>
+
     // Modal Image Gallery
+
     function onClick(element) {
+
       document.getElementById("img01").src = element.src;
+
       document.getElementById("modal01").style.display = "block";
+
       var captionText = document.getElementById("caption");
+
       captionText.innerHTML = element.alt;
+
     }
+
+
+
 
 
     // Toggle between showing and hiding the sidebar when clicking the menu icon
+
     var mySidebar = document.getElementById("mySidebar");
 
+
+
     function w3_open() {
+
       if (mySidebar.style.display === 'block') {
+
         mySidebar.style.display = 'none';
+
       } else {
+
         mySidebar.style.display = 'block';
+
       }
+
     }
+
+
 
     // Close the sidebar with the close button
+
     function w3_close() {
+
       mySidebar.style.display = "none";
+
     }
+
   </script>
+
 <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script></span>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    let devfolioOptions = {
-        buttonSelector: '#devf
-olio-apply-now',
-        key: 'myhackathonkey',
-    }
 
-    let script = document.createElement('script');
-    script.src = "https://apply.devfolio.co";
-    document.head.append(script);
 
-    script.onload = function () {
-        new Devfolio(devfolioOptions);
-    }
 
-    script.onerror = function () {
-        document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-            window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-        });
-    }
-});
-  </script>
   </body>
+
+
 
 </html>
