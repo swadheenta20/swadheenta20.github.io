@@ -60,6 +60,51 @@
   float: left;
   margin-right: 5px;
 }
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
 </style>
 
 <body>
@@ -152,11 +197,19 @@
 
    That's not all!! We are a movement, not just an event. With a dizzying array of project presentations, workshops, and sessions, we aim to go Swadheen!!
          </p>
-    <div class="w3-center" id="involve"><a href="hackinfinity.html" target="_blank" class="w3-button w3-dark-grey" style="margin-top:40px" >Find out how to get involved</a></div>
+    <div class="dropdown">
+  <button class="dropbtn">Get involved!!</button>
+    <div class="dropdown-content">
+      <a href="#hack">Hackathon</a>
+      <a href="#aboutind">Indradhanush</a>
+      <a href="#workshop">Workshops</a>
+      <a href="#contact">Campus Ambassador</a>
+    </div>
+</div>
 
  
 </div>
-   <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="aboutind">
+   <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="hack">
    
     <img src="./images/icon_hackathon.png"  style="width:260px;height:220px;float:left;margin-left:20px; margin-right:20px">
 	
@@ -251,9 +304,12 @@
   <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="workshop">
    
   
-    <h3 class="w3-center" style="font-size:40px;">Workshops</h3><br><br><br>
-
-    <p class="w3-center">Coming soon!!</p>
+    <h3 class="w3-center" style="font-size:40px;">Workshops</h3><br>
+    <p class="w3-center">A series of technical workshops for complete noobs, aimed to take you from zero to pro!!</p><br><br>
+    <div  class="w3-center">
+    <img src="./images/mlhlocal.png">
+    <p class="w3-center">Coming soon!! Stay tuned for updates!!</p>
+  </div>
 
              
  
