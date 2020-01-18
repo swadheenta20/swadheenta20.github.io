@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 <style>
 
@@ -35,8 +36,69 @@
     font-family: "Raleway", sans-serif
 
   }
+  .faqh{
+    font-size:50px;
+  }
+  
+  }
+  .faqs{
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    
+  }
+  .icon:hover{
+    transform: scale(1.1);
+    transition: .25s ease-in-out;
+  }
+  .button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: gray;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 16px;
+    width: 190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+    
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
-
+  .hove{
+    border-radius: 20px;
+    
+  }
+  .hov:hover{
+    transform: scale(1.02);
+    transition: .25s ease-in-out;
+  }
 
   body,
 
@@ -119,7 +181,7 @@
        
         <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Swadheenta '20</a>
 	      <a href="#aboutind" class="w3-bar-item w3-button"><i class="fa fa-user"></i>Modus Operandi</a>
-
+        <a href="#speaker" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Speakers</a>
         <a href="#schedule" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Schedule</a>
 
 <!-- 	       <a href="#reg" class="w3-bar-item w3-button"><i class="fa fa-th"></i>Speakers</a> -->
@@ -163,7 +225,7 @@
 
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Swadheenta'20</a>
 	  <a href="#aboutind" onclick="w3_close()" class="w3-bar-item w3-button">Structure</a>
-
+    <a href="#sponsor" onclick="w3_close()" class="w3-bar-item w3-button">Sponsors</a>
     <a href="#schedule" onclick="w3_close()" class="w3-bar-item w3-button">Schedule</a>
 
     <a href="#reg" onclick="w3_close()" class="w3-bar-item w3-button">Registration</a>
@@ -381,10 +443,23 @@
 
     </div>
 
-  </div>
 
+    <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="hack">
 
-
+        <img src="./images/startupindia.png"  style="width:380px;height:150px;float:left;margin-left:0px; margin-right:20px">
+       
+        <h3 class="w3-left" style="font-size:40px;">About StartupIndia</h3><br><br><br>
+       
+        <p style="font-size:16px;">
+       
+        The aim of Startup India foundation is to have students to develop entrepreneurial mindset providing them with necessary mentoring and support, as an attemt to imbibe startup culture. 
+             </p>
+        <br> 
+        
+                 
+       
+       </div>
+  
   <!-- Schedule -->
 
   <div class="w3-container" style="background-image: url('./images/BN1.jpg');padding:128px 16px; text-align: center;" id="schedule">
@@ -438,38 +513,55 @@
 
 </div>
 	    </div>
-      <div class="w3-container" style="background-color: purple; color: white;padding:128px 16px" id="aboutind">
-
-    <h3 class="w3-center" style="color: white;">Speakers</h3>
-
-    <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/wep/dhruvam.jpg" alt="Dhruvam" style="width:100%">
-            <div class="w3-container">
-              <h3>Mr Dhruvam Thaker</h3>
-              <p>CEO, The Smart Taxi</p>
-              
+      <div class="w3-container" style="position:relative; height:80%;background-size: 100% 100%; background:rgb(93, 136, 100)" id="speaker">
+          <!--     <div class="w3-row-padding">
+          <div class="w3-col m6"> -->
+          <h3 style="position: relative;top:30px;"><center>Speakers</center></h3>
+         
+      
+          <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
+              <div class="w3-col team-member hov">
+                  <div class="w3-card hove">
+                <img src="./images/wep/sam.jpg" alt="dkp" style="width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Sam Baish</h3>
+                  <p>CEO, StartupIndia</p>
+                  </div>
+              </div>
+            </div>
+            <div class="w3-col team-member hov">
+                <div class="w3-card hove">
+                <img src="./images/wep/dhruvam.jpg" alt="Shivangi" style="width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Dhruvam Thaker</h3>
+                  <p>CEO, The Smart Taxi</p>
+                  
+      <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+                </div>
+              </div>
+            </div>
+            <div class="w3-col team-member hov">
+                <div class="w3-card hove">
+                <img src="./images/wep/mayank.jpg" alt="mayank" style=" width:100%">
+                <div class="w3-container">
+                  <h3 style="position:relative;top:10px;">Mr Mayank Pareek</h3>
+                  <p>CEO, Scholify </p>
+                 
+      <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="w3-col team-member">
-          <div class="w3-card">
-            <img src="./images/wep/mayank.jpg" alt="Mayank" style="width:100%">
-            <div class="w3-container">
-              <h3>Mr Mayank Pareek</h3>
-              <p>CEO, Scholify</p>
-              </div>
+          
+      
           </div>
-        </div>
-
-  </div>
-  <p style=" font-size: 28px;text-align: center;">Many more coming soon!!</p>
-</div>
+        
+    
+    
 
 
 
-    <div class="w3-container" style="background-color: black; color: white; padding:128px 16px; text-align: center;" id="reg">
+    <div class="w3-container" style="position:relative;background-color: black;color: white; padding:128px 16px; text-align: center;" id="reg">
 
       <h3 class="w3-center" style="color:white;">Register here</h3>
 
@@ -482,10 +574,10 @@
 
         <div class="w3-center">
 
-          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center icon"></i>
 
           <p class="w3-large">From your idea, to a business.</p>
-		<div class="w3-center" id="hi2"><a href="https://swadheenta.typeform.com/to/YB7z1e" target="_blank" class="w3-button w3-white">Register here</a></div>
+		<div class="w3-center" id="hi2"><button class="button" style="position:relative;top:10px;vertical-align:middle; width:11%; font-size:16px;padding:.5%;" onclick="window.location.href = 'https://swadheenta.typeform.com/to/YB7z1e';"><span>Register here</span></button></div>
 <br>
 
 <!--           <p><a href="https://forms.gle/fvmBsBcNWVGH4i1a6">Register</a></p> -->
@@ -585,13 +677,72 @@
 
   </div>
 
+  <div id ="content6" class="container-fluid faqs" style="padding-top:70px;padding-bottom:70px;background:#feffff;">
+      <section id="faq">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-10 mx-auto text-center">
+                      <h3 class="w3-center faqh" style="color:black;" >FAQ</h3>
+                      
+                       </div>
+              </div>
+              <div class="row mt-5" id="accordion">
+                  <div class="col-lg-6 col-12">
+                      <div class="card my-3 point" >
+                          <div class="card-header btn collapsed accor" id="faqOne" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Who can apply?
+                          </div>
+                          <div id="collapseOne" class="collapse accor" aria-labelledby="faqOne" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Students presently enrolled at a recognised university, aged 16-28 years.</div>
+                          </div>
+                      </div>
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqTwo" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Registration fees?</div>
+                          <div id="collapseTwo" class="collapse accor" aria-labelledby="faqTwo" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Nada!! Learn and make, and that's our reward.</div>
+                          </div>
+                      </div>
+                     
+                      
+                  </div>
+                  <div class="col-lg-6 col-12" style="font-size:20
+                  px;">
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">Travel Reimbursements</div>
+                          <div id="collapseEight" class="collapse accor" aria-labelledby="faqEight" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Yes!!! Provided you submit all details, you will be reimbursed. Of course, there's a cap. Also</div>
+                          </div>
+                      </div>
+                      <div class="card my-3 point">
+                          <div class="card-header btn collapsed accor" id="faqNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">Will I have a chance to participate?<</div>
+                          <div id="collapseNine" class="collapse accor" aria-labelledby="faqNine" data-parent="#accordion">
+                              <div class="card-body pt-2"style="color:black;">Yepsss! During the pitch session, anyone with an idea can come forward and present it in front of a panel of experts, get mentoring and support.
+                                </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="mx-auto text-center">
+                  <p class="mt-5"style="color:black;">Something we missed?<a href="mailto:hackinfinity2.0@gmail.com" target="_blank">
+                      Let us know
+                  </a></p>
+                  <div class="contact-links"><a href="https://twitter.com/hackinoutco" target="_blank">
+                      
+                      
+                  </div>
+              </div>
+          </div>
+      </section>
+    
+    </div>
+    
 
 
 
 
 
-
-  <div class="w3-container w3-light-grey" style="padding:128px 16px;" id="sponsor">
+  <!--<div class="w3-container w3-light-grey" style="padding:128px 16px;" id="sponsor">
 
     <div class="w3-row-padding" style="width: 100%;">
 
@@ -643,7 +794,7 @@
 
     </div>
 
-  </div>
+  </div>-->
 
 
 
@@ -698,6 +849,10 @@
     </div>
 
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
