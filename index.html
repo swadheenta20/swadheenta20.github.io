@@ -374,7 +374,7 @@
       
     </div>
     <br>
-      <p style="font-size: xx-large;">Worth Rs 15 Lakhs!!</p>
+      <p style="font-size: xx-large;">Worth Rs 9 Lakhs!!</p>
       
   </div>
   <div class="w3-container" style="background-color:#000930; padding:100px 16px;color: white; background-size: 100% 100%;"; id="workshop">
@@ -442,7 +442,7 @@
     <div class="sponsor-pics w3-row" >
         <div class="sponsor-pic"style="float: left; margin-left: 100px;">
             <a href="https://www.startupindia.gov.in/" target="_blank">
-            <img src="./images/startupindia.png" style="height: 100px; max-height: 100px;">
+            <img src="./images/startupindia.png" style="width:280px;height: 100px; max-height: 100px;">
             <p>Event partner</p>
           </a> 
           </div>
@@ -453,10 +453,10 @@
       </a> 
       </div>
 
-      <div class="sponsor-pic"style="float: right; margin-right: 100px; ">
+      <div class="sponsor-pic"style=" margin-right: 100px; ">
 
         <a href="https://devfolio.co" target="_blank">
-        <img src="./images/DevBlack2.png" style="height: 150%; margin-bottom: 50px; margin-top: 20px;">
+        <img src="./images/DevBlack2.png" style="width:290px;height: 150%; margin-bottom: 50px; margin-top: 20px;">
                 <p>Platinum Sponsor : Devfolio</p>
 
         </a>
@@ -470,7 +470,7 @@
 
       </a>
       </div>
-      <div class="sponsor-pic" style="float: right; margin-right: 200px; margin-top: 70px;">
+      <div class="sponsor-pic" style="  margin-top: 80px;">
         <a href="https://crio.do" target="_blank" >
         <img src="./images/Crio.png" style="height: 50px; ">
                         <p>Learning and gift partner: Crio.Do</p>
@@ -654,7 +654,7 @@
             <img src="./images/anirudh.jpeg" alt="annirudh" style="width:100%">
             <div class="w3-container">
               <h3 style="position:relative;top:10px;">Annirudh</h3>
-              <p>Lead, Design and Logistics</p>
+              <p>Lead, planning</p>
               <p>He thinks he can draw</p>
 <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
             </div>
@@ -777,64 +777,65 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+ 
   <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          let devfolioOptions = {
+              buttonSelector: '#devfolio-apply-now',
+              key: 'hackinfinity',
+          }
+          // Modal Image Gallery
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+          var captionText = document.getElementById("caption");
+          captionText.innerHTML = element.alt;
+        }
     
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
-    }
+    
+        // Toggle between showing and hiding the sidebar when clicking the menu icon
+        var mySidebar = document.getElementById("mySidebar");
+    
+        function w3_open() {
+          if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+          } else {
+            mySidebar.style.display = 'block';
+          }
+        }
+    
+        // Close the sidebar with the close button
+        function w3_close() {
+          mySidebar.style.display = "none";
+        }
+          let script = document.createElement('script');
+          script.src = "https://apply.devfolio.co";
+          document.head.append(script);
+    
+          script.onload = function () {
+              new Devfolio(devfolioOptions);
+          }
+    
+          script.onerror = function () {
+              document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
+                  window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
+              });
+          }
+      });
+      </script>
+    
+    
 
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-      mySidebar.style.display = "none";
-    }
-  </script>
   <span id="siteseal">
     <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=6yE5q2ogL3vRSWNqLCsMuhoXlFi3tkxs9o6MRUz8OrfW41r8LLgUA0ETy9qe"></script>
   </span>
   
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-      let devfolioOptions = {
-          buttonSelector: '#devfolio-apply-now',
-          key: 'hackinfinity',
-      }
+  
 
-      let script = document.createElement('script');
-      script.src = "https://apply.devfolio.co";
-      document.head.append(script);
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-      script.onload = function () {
-          new Devfolio(devfolioOptions);
-      }
-
-      script.onerror = function () {
-          document.querySelector(devfolioOptions.buttonSelector).addEventListener('click', function () {
-              window.location.href = 'https://devfolio.co/external-apply/' + devfolioOptions.key;
-          });
-      }
-  });
-  </script>
   </body>
 
 </html>
-*
