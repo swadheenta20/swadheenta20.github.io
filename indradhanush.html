@@ -36,6 +36,25 @@
     font-family: "Raleway", sans-serif
 
   }
+  table {
+    border-collapse: collapse;
+    width: 120%;
+  }
+  th,td {
+    text-align: left;
+    padding:15px;
+    
+  }
+  th{
+    background-color: #ccc7c7;
+    
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color:#d6cddf;
+  }
   .faqh{
     font-size:50px;
   }
@@ -296,14 +315,27 @@
 
   <div class="w3-container" style="background-color:#144f67; padding:100px 16px;color: white; background-size: 100% 100%; "; id="aboutind">
   
-    <img src="./images/icon_indra.png"  style="width:270px;height:240px;float:left;margin-left:20px; margin-right:20px">
+    <img src="./images/icon_indra.png"  style="width:270px;height:280px;float:left;margin-left:20px; margin-right:20px">
    
-   <h3 class="w3-left" style="font-size:40px";>About Indradhanush</h3><br><br><br>
-   <p style="font-size:18px;">
+   <h3 class="w3-left" style="position:relative;left:25px;font-size:40px";>About Indradhanush</h3><br><br><br>
+   <p style="position:relative;left:25px;font-size:18px;">
  
-    A 12 hours business Hackathon, where you'll be mentored hands on on Business model formation, investor pitching, marketing and brand development, pitch to venturr Capitalists and investors, and win huge prizes.  
-
+   A 16 hours business hackathon to be organized in association with startup india following are the features.
+   <ol style="position:relative;left:40px;">
+      <li>Team formation.</li>
+        <li>Mentor inspired workshops on-</li>
+        
+          <ul style="position:relative;left:30px;">
+            <li >Business model formation.</li>
+            <li>Investor planning</li>
+            <li>Networking</li>
+            <li>Brand Development</li>
+            
    
+          </ul></li>
+   </ol>
+   
+   </p>
    </div>
   <div class="w3-container" style="background-color: black; color: white;padding:128px 16px" id="wep">
 
@@ -475,53 +507,76 @@
   
   <!-- Schedule -->
 
-  <div class="w3-container" style="background-image: url('./images/BN1.jpg');padding:128px 16px; text-align: center;" id="schedule">
-
-    <h3 class="w3-center" style="color: white;">Schedule</h3>
-
-    <div class="w3-row-padding" style="margin:0 -16px">
-
-      <div class="w3-center w3-margin-bottom">
-
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-
-
-      <div class="w3-center">
-
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">9th Feb</li>
-
-          <li class="w3-padding-16">9:00 AM - Indradhanush begins</li>
-
-          <li class="w3-padding-16">9:30 AM - Business Model formation</li>
-
-
-
-          <li class="w3-padding-16">11:00 AM - Investor pitching</li>
-
-          <li class="w3-padding-16">Noon - Why networking works</li>
-
-           <li class="w3-padding-16">1 PM - Lunch</li>
-
-          <li class="w3-padding-16">2 PM - Theme presentation and team formation          </li>
-
-           <li class="w3-padding-16">4 PM - Pitch session</li>
-
-           <li class="w3-padding-16">5 PM - Panel discussion</li> 
-
-          <li class="w3-padding-16">6 PM - Conclusion of Swadheenta</li>
-
-
-
-        </ul>
-
-      </div>
-
-
-
-
-
+  <div id ="content4" class="container" style="padding-top:70px;padding-bottom:70px; background:#fff9f0;">
+    <section id="schedule">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <img class="img-fluid" src="https://hackinout.co/img/title-schedule.png" alt="Schedule">
+                    <p class="mt-3">Here's a rough breakdown of the two days you'll be spending at indranush.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mt-5">
+                    <div id="scheduleTable" class="mx-auto ">
+                        <table class="table table-1" style="position:relative;left:-25%;width:150%;">
+                            <thead>
+                                <tr>
+                                    <th colspan="2"><center>9 february 2020</center></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>9:00 AM </td>
+                                    <td>Indradhanush begins</td>
+                                </tr>
+                                <tr>
+                                    <td>9:30 AM</td>
+                                    <td>Business Model formation</td>
+                                </tr>
+                                <tr>
+                                    <td>11:00 AM</td>
+                                    <td>
+                                      Investor pitching
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <td>Noon </td>
+                                  <td>Why networking works</td>
+                              </tr>
+                              <tr>
+                                  <td>1 PM </td>
+                                  <td>Lunch</td>
+                              </tr>
+                              <tr>
+                                  <td>2 PM</td>
+                                  <td>
+                                    Theme presentation and team formation
+                                  </td>
+                              </tr>
+                              <tr>
+                                <td>4 PM</td>
+                                <td>Pitch session</td>
+                            </tr>
+                            <tr>
+                                <td>5 PM</td>
+                                <td>Panel discussion</td>
+                            </tr>
+                            <tr>
+                                <td>6 PM</td>
+                                <td>
+                                  Conclusion of Swadheenta
+                                </td>
+                            </tr>
+                                
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+    </div>
     </div>
 
 </div>
