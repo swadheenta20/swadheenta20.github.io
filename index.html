@@ -68,6 +68,7 @@
 
   }
   
+  
   body,
   html {
     height: 100%;
@@ -111,12 +112,18 @@
  
   margin-right: 10px;
   float: left;
-}
+} 
 .hove{
   border-radius: 20px;
-  
+  clip-path: polygon(79% 0, 100% 0, 100% 100%, 0 100%, 0 43%);
+  box-shadow: 5px 10px 8px #888888;
+
+  position:relative;
+  top:-100px;
+
 }
 .hove:hover{
+  
   color:blue;
   background:rgb(243, 243, 247);
 }
@@ -124,8 +131,12 @@
   transform: scale(1.02);
   transition: .25s ease-in-out;
   
+  
+  
 
 }
+
+
 
 .h1 {
   float: left;
@@ -655,63 +666,66 @@
       <h3 class="w3-center">THE TEAM</h3>
       <p class="w3-center w3-large">The independents</p>
       <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
+          <div class="w3-col team-member hov" style="position:relative;height:200px;" >
+              
+            <img src="./images/team1.png" alt="dkp" style="width:100%" class="img-fluid rounded-circle w-75 mb-3 z-index:2;">
+            <div class="w3-card w3-container hove" style="position:relative;height:260px;z-index:-1;">
+              <h3 style="position:relative;top:100px;">Dushyant</h3>
+              <p style="position:relative;top:100px;">Team Lead</p>
+              <p style="position:relative;top:100px;">Getting the signs and making the speeches</p>
+<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
+            </div>
+          </div>
+          
           <div class="w3-col team-member hov">
-              <div class="w3-card hove">
-            <img src="./images/team1.png" alt="dkp" style="width:100%">
-            <div class="w3-container">
-              <h3 style="position:relative;top:10px;">Dushyant</h3>
-              <p>Team Lead</p>
-              <p>Getting the signs and making the speeches</p>
+              
+            <img src="./images/team2.jpg" alt="shivangi" style="width:100%" class="img-fluid rounded-circle w-75 mb-5 z-index:2;">
+            <div class="w3-container  hove" style="position:relative;top:-150px;height:300px;z-index:-1;">
+              <h3 style="position:relative;top:120px;">Shivangi</h3>
+              <p style="position:relative;top:120px;">Lead, Digital Marketing and Women Emancipation</p>
+              <p style="position:relative;top:120px;">Insta-fan and uses her phone a lot</p>
 <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
             </div>
           </div>
-        </div>
-        <div class="w3-col team-member hov">
-            <div class="w3-card hove">
-            <img src="./images/team2.jpg" alt="Shivangi" style="width:100%">
-            <div class="w3-container">
-              <h3 style="position:relative;top:10px;">Shivangi</h3>
-              <p>Lead, Digital Marketing and Women Emancipation</p>
-              <p>Insta-fan and uses her phone a lot</p>
+          <div class="w3-col team-member hov" >
+              
+            <img src="./images/team5.jpeg" alt="dkp" style="width:100%" class="img-fluid rounded-circle w-75 mb-3 z-index:2;">
+            
+            <div class="w3-card w3-container hove" style="position:relative;height:250px;z-index:-1;">
+              <h3 style="position:relative;top:100px;">Nikunj</h3>
+              <p style="position:relative;top:100px;">Lead, Finance</p>
+              <p style="position:relative;top:100px;">Money man</p>
 <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
             </div>
           </div>
-        </div>
-        <div class="w3-col team-member hov">
-            <div class="w3-card hove">
-            <img src="./images/team5.jpeg" alt="Nikunj" style=" width:100%">
-            <div class="w3-container">
-              <h3 style="position:relative;top:10px;">Nikunj</h3>
-              <p>Lead, Finance</p>
-              <p>Money man</p>
-<!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
-          </div>
-        </div>
+          
+        
+        
+       
       </div>
-      <div class="w3-row-padding w3-grayscale" style="margin-top:64px; display: flex; flex-wrap: wrap; justify-content: center;">
-          <div class="w3-col team-member hov">
-              <div class="w3-card hove">
-            <img src="./images/rohan1.jpeg" alt="rohan" style="width:100%">
-            <div class="w3-container">
-              <h3 style="position:relative;top:10px;">Rohan</h3>
-              <p>Lead, Outreach</p>
-              <p>Fast talker, this one</p>
+      <div class="w3-row-padding w3-grayscale" style=" display: flex; flex-wrap: wrap; justify-content: center;">
+        <div class="w3-col team-member hov">
+              
+          <img src="./images/rohan1.jpeg" alt="dkp" style="width:100%" class="img-fluid rounded-circle w-75 mb-3 z-index:2;">
+          <div class="w3-card w3-container hove" style="position:relative;height:250px;z-index:-1;">
+            <h3 style="position:relative;top:100px;">Rohan</h3>
+            <p style="position:relative;top:100px;">Lead, Outreach</p>
+            <p style="position:relative;top:100px;">Fast talker, this one</p>
 <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
           </div>
         </div>
         <div class="w3-col team-member hov">
-          <div class="w3-card hove">
-            <img src="./images/anirudh.jpeg" alt="annirudh" style="width:100%">
-            <div class="w3-container">
-              <h3 style="position:relative;top:10px;">Aniruddh</h3>
-              <p>Lead, planning</p>
-              <p>He thinks he can draw</p>
+              
+          <img src="./images/anirudh.jpeg" alt="dkp" style="width:100%" class="img-fluid rounded-circle w-75 mb-3 z-index:2;">
+          <div class="w3-card w3-container hove" style="position:relative;height:250px;z-index:-1;">
+            <h3 style="position:relative;top:100px;">Aniruddh</h3>
+            <p style="position:relative;top:100px;">Lead, planning</p>
+            <p style="position:relative;top:100px;">He thinks he can draw</p>
 <!--               <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p> -->
-            </div>
           </div>
         </div>
+          
+        
 
       </div>
     </div>
